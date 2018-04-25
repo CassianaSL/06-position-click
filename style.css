@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+div {
+    position: static;
+    /* padrão não faz diferença colocar ou não, é o empilhado */
+}
+
+div.um {
+    background-color: cyan;
+    position: absolute;
+    /* position absolute colocar em qualquer lugar da tela*/
+    bottom: 10px;
+    left: 10px;
+    width: 300px;
+    /* largura */
+    height: 50px;
+    /* altura */
+}
+
+div.dois {
+    background-color: darkgreen;
+    width: 50%;
+}
+
+div.tres {
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: -7px;
+    background-color: darkorchid;
+    /* a ordem de empilhamento é do ultimo para o primeiro, se colocar um em ciima do outro o ultimo é que vai aparecer */
+    z-index: -1;
+    /* z-index para ficar atrás de div dois */
+}
+
+div.quadradinho {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    top: 0px;
+    left: 0px
+}
